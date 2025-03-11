@@ -4,9 +4,7 @@ import com.learning.spring_boot.transactional.repository.AccountRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import java.util.Optional;
-
-@Service
+@Service(value = "paymentServiceV2")
 public class PaymentService {
     private final TransactionTemplate transactionTemplate;
     private final AccountRepository accountRepository;
